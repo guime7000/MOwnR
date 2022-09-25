@@ -1,0 +1,22 @@
+{
+  "root": "/path/to/root/directory/of/project/",
+  "vrwind": "https://static.virtualregatta.com/winds/",
+  "storage": {
+    "src": "Src/",
+    "data": {
+      "wnd": "Data/Wnd/",
+      "grib": "Data/Gribs/",
+      "polar": "Data/Polaires/",
+      "map": "Data/MapsVR/",
+      "iso": "Data/Isochrones/",
+      "folium": "Data/Folium/"
+    }
+  },
+  "api": {
+    "url": "https://roboats.virtualregatta.com/api/",
+    "login": "login",
+    "leg": "infos/slow",
+    "bs": "infos/fast",
+    "ba": "boat/actions"
+  }
+}
