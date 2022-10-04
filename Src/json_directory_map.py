@@ -3,12 +3,11 @@ import os
 
 """
 Generates a projectMap JSON config file for the project
+
 """
 
-
-
 # Root Directory of the project
-rootDir = '/home/tom/Bureau/Developpement/VR_Iroboat/MonBoat/'
+rootDir = '/home/tom/Bureau/Developpement/Git/MOwnR/'
 
 # Virtual Regatta's wind files Directory
 vrWndDir = 'https://static.virtualregatta.com/winds/'
@@ -31,6 +30,11 @@ legInfo = 'infos/slow'
 boatInfo = 'infos/fast'
 boatActions = 'boat/actions'
 
+raceId = 531 # Iroboat Qualification Race
+leg = 1 # leg number for the raceId Race
+
+
+
 # Project map dictionary
 arborescence = {"root" : rootDir,
                 "vrwind" : vrWndDir,
@@ -46,11 +50,22 @@ arborescence = {"root" : rootDir,
                         }
                     },
                 "api": {
-                    "url":ApiUrl, 
-                    "login" : login,
+                    "url":ApiUrl,
                     "leg": legInfo,
                     "bs": boatInfo,
-                    "ba": boatActions
+                    "ba": boatActions,
+                    "raceId" : raceId,
+                    "leg_num" : leg,
+                    "login" : {
+                        "subUrl" : login,
+                        "headers" : {'accept': '*/*','Content-Type': 'application/json'},
+                        },
+                    "slow" :{
+                        "subUrl" : legInfo
+                        },
+                    "fast" :{
+                        "subUrl" : boatInfo
+                        }
                     }
                 }
 
