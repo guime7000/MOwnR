@@ -1,5 +1,5 @@
 {
-  "root": "/path/to/root/directory/of/project/",
+  "root": "/home/tom/Bureau/Developpement/Git/MOwnR/",
   "vrwind": "https://static.virtualregatta.com/winds/",
   "storage": {
     "src": "Src/",
@@ -14,9 +14,23 @@
   },
   "api": {
     "url": "https://roboats.virtualregatta.com/api/",
-    "login": "login",
     "leg": "infos/slow",
     "bs": "infos/fast",
-    "ba": "boat/actions"
+    "ba": "boat/actions",
+    "raceId": 531,
+    "leg_num": 1,
+    "login": {
+      "subUrl": "login",
+      "headers": {
+        "accept": "*/*",
+        "Content-Type": "application/json"
+      }
+    },
+    "slow": {
+      "subUrl": "infos/slow"
+    },
+    "fast": {
+      "subUrl": "infos/fast"
+    }
   }
 }
