@@ -94,7 +94,4 @@ def bilinearInterp(inKnownCornersCoords, inKnownCornersValues, inX, inY):
 
 
     return interpolatedFinal
-
-# wikiBIs(np.array([[0,0,1,1], [0,0,1,1]]),np.array([[0,0,1,2],[0,0,1,2]]),np.array([[0.5, 0.25]]),np.array([[0.5, 0.25]]))
-toto = bilinearInterp(np.array([[0,0,1,1]]),np.array([[0,0,1,2]]),np.array([[0.5, 0.25]]),np.array([[0.5, 0.25]]))
-print(toto)
+    
