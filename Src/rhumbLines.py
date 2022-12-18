@@ -1,6 +1,8 @@
 import numpy as np
 
 """
+source : https://www.movable-type.co.uk/scripts/latlong.html
+
 Vectorised Rhumb line calculation. 
 
 Returns destination point coordinates (Lat / Lon) at a certain distance D from a starting point (Lat/Lon coordinates) following a given azimuth

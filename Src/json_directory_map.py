@@ -1,13 +1,14 @@
 import json
 import os
 
+
 """
 Generates a projectMap JSON config file for the project
 
 """
 
 # Root Directory of the project
-rootDir = '/home/tom/Bureau/Developpement/Git/MOwnR/'
+rootDir = '/home/tom/Bureau/Developpement/Git/MOwnR/Prod'
 
 # Virtual Regatta's wind files Directory
 vrWndDir = 'https://static.virtualregatta.com/winds/'
@@ -17,6 +18,7 @@ dataDir = 'Data/'
 foliumDir = dataDir + 'Folium/'
 gribDir = dataDir + 'Gribs/'
 isochroneDir = dataDir + 'Isochrones/'
+logDir = dataDir + 'Log/'
 mapDir = dataDir +'MapsVR/'
 polarDir = dataDir + 'Polaires/'
 sourceCodeDir = 'Src/'
@@ -46,7 +48,8 @@ arborescence = {"root" : rootDir,
                         "polar" : polarDir, 
                         "map" : mapDir, 
                         "iso" : isochroneDir,
-                        "folium" : foliumDir
+                        "folium" : foliumDir,
+                        "log" : logDir
                         }
                     },
                 "api": {
